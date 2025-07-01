@@ -50,13 +50,13 @@ export const ListSection = () => {
     ];
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 bg-gray-950 gap-[12px] p-[60px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 h-[588px] bg-[#0A0914] gap-[64px] pr-[64px] pl-[64px] pt-[48px] pb-[80px]'>
             {
                 benefits.map((item, index) => (
-                    <div key={index} className="benefit-card w-[394px] h-[96px]">
-                        <div className="icon">{item.icon}</div>
-                        <h3 className='text-gray-300'>{item.title}</h3>
-                        <p className='text-gray-500'>{item.description}</p>
+                    <div key={index} className="benefit-card w-[394px] h-[96px] gap-[12px] flex flex-col leading-tight">
+                        <div className="icon w-[38px] h-[38px]">{item.icon}</div>
+                        <h3 className='text-[#FAFAFF] text-[18px] font-[640]'>{item.title}</h3>
+                        <p className='text-gray-500 text-[18px] font-[500]'>{item.description}</p>
                     </div>
                 ))
             }

@@ -25,13 +25,13 @@ export const ListSection2 = () => {
       
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 bg-white gap-[12px] p-[60px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 h-[312px] bg-[#FAFAFF] gap-[12px] pt-[48px] pr-[64px] pb-[80px] pl-[64px]'>
             {
                 partnerPrograms.map((item, index) => (
-                    <div key={index} className="benefit-card w-[394px] h-[96px]">
-                        <div className="icon">{item.icon}</div>
-                        <h3 className='text-black'>{item.title}</h3>
-                        <p className='text-gray-800'>{item.description}</p>
+                    <div key={index} className="benefit-card w-[394px] h-[184px]">
+                        <div className="icon w-[38px] h-[38px]">{item.icon}</div>
+                        <h3 className='text-black text-[18px] font-[640]'>{item.title}</h3>
+                        <p className='text-gray-800 text-[18px] font-[500]'>{item.description}</p>
                     </div>
                 ))
             }
